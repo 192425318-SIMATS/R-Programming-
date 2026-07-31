@@ -1,0 +1,9 @@
+Bank&lt;-setRefClass(&quot;Bank&quot;,
+                     fields=list(acc=&quot;numeric&quot;,name=&quot;character&quot;,balance=&quot;numeric&quot;),
+                     methods=list(
+                       deposit=function(a){balance&lt;&lt;-balance+a},
+                       withdraw=function(a){if(balance&gt;=a)balance&lt;&lt;-balance-a},
+                       display=function(){cat(acc,name,balance,&quot;\n&quot;)}
+                     ))
+b&lt;-Bank$new(acc=101,name=&quot;Kumar&quot;,balance=10000)
+b$deposit(5000);b$withdraw(3000);b$display()
