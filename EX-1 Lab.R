@@ -1,0 +1,10 @@
+num <- c(10,20,30)
+char <- c("A","B","C")
+logi <- c(TRUE,FALSE,TRUE)
+
+print(num)
+print(char)
+print(logi)
+class(num)
+class(char)
+class(logi)
